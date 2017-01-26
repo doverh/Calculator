@@ -1,16 +1,16 @@
 require "minitest/autorun"
-require_relative "ruby_addition.rb"
+require_relative "ruby_multiplication.rb"
 
 class TestRubyFunction < Minitest::Test
 
-	#Check if 3 arguments added return a number
-     def test_if_3_numbers_where_inserted
-     	assert_equal(33,add(5,8,20))
+	#Check if 2 arguments multiplied return correct number
+     def test_if_2_multiplied_numbers_return_correct
+     	assert_equal(40,mult(5,8))
      end
 
      #Check if 3 arguments added return a number
      def test_if_10_numbers_where_inserted
-     	assert_equal(55,add(1,2,3,4,5,6,7,8,9,10))
+     	assert_equal(55,mult(1,2,3,4,5,6,7,8,9,10))
      end
 
 	#test 2 number return result

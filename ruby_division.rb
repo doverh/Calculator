@@ -1,20 +1,23 @@
 
 
-def add(num1, num2)
-	#Test if variables are strings, add and return them
-	if ((num1.is_a? String) && (num2.is_a? String))  
-		puts num1 + num2
-		return num1 + num2
 
-	#Test if variables are numbers, add and return them
-	elsif ((num1.is_a? Numeric) && (num2.is_a? Numeric))  
-		puts num1 + num2
-		return num1 + num2
+def div(*others)
+	
+	#get the first element to be divided(dividend)
+	quotient = others.push.first
+	puts "Dividend:#{quotient}"
 
+	#remove the first elements from the array
+	others.shift 
+	
+	#For each remaining element (divisors), divide from the dividend and get the quotient
+	others.each do |num|
+    	quotient /= num
+    	#puts result
+    end
+    
+    puts "The quotient is :#{quotient}"    
+    return quotient
 		
-	else
-		print "Either #{num1} and #{num2} should be numbers!"
-	end
-
-end
-
+end 
+div(10,2)
