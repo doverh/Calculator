@@ -2,10 +2,12 @@
 
 def add(*others)
 
+	#Initializate variable to store result of addition
 	result = 0
+	
+	#For each element of array, sum to the result 
 	others.each do |num|
     	result += num
-    	#puts result
     end
     
     puts result
@@ -13,6 +15,7 @@ def add(*others)
 		
 end 
 
+# 	Code to test strings
 # 	#Test if variables are strings, add and return them
 # 	if ((num1.is_a? String) && (num2.is_a? String))  
 # 		puts num1 + num2
