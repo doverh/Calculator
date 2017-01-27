@@ -4,7 +4,7 @@ require_relative "ruby_multiplic.rb"
 class TestRubyMultiplication < Minitest::Test
 
 	#1. Check if 2 arguments multiplied return correct number
-     def assert_2_num_multiplication
+     def test_2_num_multiplication
      		assert_equal(40,multi(5,8))
      end
 
@@ -19,7 +19,7 @@ class TestRubyMultiplication < Minitest::Test
      end
 
      #4. Assert negative numbers can be multiplied
-	def assert_negative_multiplication
+	def test_negative_multiplication
      	assert_equal(-16,multi(2,-2,-2,-2))
      end
 

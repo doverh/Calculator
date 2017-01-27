@@ -1,17 +1,17 @@
 
 
-def subs(*others)
-	#get the first element to be substracted(Minuend)
-	difference = others.push.first
+def subs(*numbers)
+	
+	#remove the first element from the array and use it as minuend
+	difference = numbers.shift 
 	puts "Minuend:#{difference}"
 
-	#remove the first elements from the array
-	others.shift 
-	
+
 	#For each remaining element (subtrahend), substract from the minuend
-	others.each do |num|
+	numbers.each do |num|
     	difference -= num
-    	#puts result
+    	#puts "Results #{results}"
+    	puts "Num #{num}"
     end
     
     puts "The difference is :#{difference}"    
